@@ -70,6 +70,7 @@ c.execute('''
 
 rows = c.fetchall()
 for row in rows:
-    print(row)
+    advisor_id, advisor_name, num_students = row
+    print(f"id of advisor: {advisor_id}, name of advisor: {advisor_name}, number of students: {num_students}")
 
 connection.close()
